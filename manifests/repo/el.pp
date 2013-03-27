@@ -4,7 +4,7 @@ class jenkins::repo::el ( $lts=0 )
 	  yumrepo {'jenkins':
 	    descr    => 'Jenkins',
 	    baseurl  => 'http://pkg.jenkins-ci.org/redhat/',
-	    gpgcheck => 1,
+	    gpgcheck => 0,
 		gpgkey   => "http://pkg.jenkins-ci.org/redhat/jenkins-ci.org.key"
 	  }
   }
@@ -12,7 +12,7 @@ class jenkins::repo::el ( $lts=0 )
 	  yumrepo {'jenkins':
 	    descr    => 'Jenkins',
 	    baseurl  => 'http://pkg.jenkins-ci.org/redhat-stable/',
-	    gpgcheck => 1,
+	    gpgcheck => 0,
 		gpgkey   => "http://pkg.jenkins-ci.org/redhat/jenkins-ci.org.key"
 	  }
   }
